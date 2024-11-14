@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: slategray;
+      }
+      h1{
+        display: flex;  
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 30px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="/user/login" method="post">
+      <label>Email:</label>
+      <input type="text" required name="email" placeholder="email@gmail.com"/>
+      <label>Password:</label>
+      <input type="text" required name="password" placeholder="password"/>
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
